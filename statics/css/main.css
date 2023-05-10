@@ -1,0 +1,244 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+/* Header */
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100000;
+    color: #fff;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px;
+}
+a{
+    text-decoration: none;
+    color: unset;
+}
+/* navigation bar */
+.nav{ 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+}
+.nav > li{
+    padding: 10px;
+}
+.nav > li:hover{
+    padding-bottom: 9px;
+    border-bottom: 1px solid #fff;
+}
+
+.nav > li.logbtn:hover{
+    padding: 10px;
+    border: none;
+}
+.lginbtn{
+    background: #ffffff99;
+    color: #432F48;
+    border: none;
+    font-size: 1em;
+    font-family: unset;
+    padding: 5px 10px;
+    font-weight: bold;
+    width: 100%;
+    border-radius: 5px;
+}
+
+/* body */
+.container{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    z-index: 1;
+}
+/* backgrounds */
+.landing-page{
+    background: url('../image/university.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #fff;
+}
+.about-page{
+    background: url('../image/neonbrand-zFSo6bnZJTw-unsplash.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #fff;
+}
+.flex-landing{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.half-land{
+    flex: 1;
+    max-width: 900px;
+}
+.docxt{
+    background: #ffffff79;
+    color: #432F48;
+    padding: 50px 10px;
+    margin: 10px;
+    border-radius: 10px;
+    text-align: center;
+}
+.docxt > h1{
+    font-size: 3em;
+}
+.docxt > p{
+    margin-top: 5px;
+    text-align: justify;
+}
+.docxt > p.moto{
+    margin-top: 20px;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    text-align: center;
+}
+.btnzone{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.btnzone > a{
+    text-decoration: none;
+    color: unset;
+    width: 90%;
+    max-width: 300px;
+    margin: 5px;
+}
+.btnzone > a > button{
+    background: #ffffff66;
+    color: #432F48;
+    border: none;
+    font-family: unset;
+    padding: 10px;
+    font-size: 1.5em;
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* pages */
+.base{
+    background: #432F48;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* login page */
+.loginform{
+    padding: 40px 30px;
+    
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+input{
+    color: #432F48;
+}
+input, .loginform > button, select{
+    border: none;
+    background: transparent;
+    outline: none;
+    padding: 10px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #432F48;
+    margin-bottom: 10px;
+    font-size: 1.2em;
+}
+input::placeholder{
+    color: #432F48;
+}
+.loginform > button{
+    border-radius: 10px;
+    background: #432F48;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    margin-top: 20px;
+}
+.loginform > div{
+    text-align: left;
+    margin-top: 20px;
+    padding-left: 10px;
+}
+.loginform > h1{
+    text-align: left;
+    margin-bottom: 30px;
+}
+.loginform > a{
+    text-align: center;
+}
+.loginform > select{
+    background: #432F48;
+    color: #fff;
+    border-radius: 8px;
+} 
+.loginform > .genderList{
+    margin: 10px 0;
+}
+.loginform > .genderList > p{
+    padding-bottom: 10px;
+}
+
+
+/* dashboard */
+.w550{
+    width: 650px;
+}
+.userinfo{
+    border-radius: 10px;
+    background: #fff;
+    color: #432F48;
+    padding: 30px 50px;
+}
+.userinfo > h2{
+    margin-bottom: 10px;
+}
+.userinfo > h1{
+    margin-bottom: 30px;
+}
+.course-list{
+    margin-top: 20px;
+    border-radius: 10px;
+    background: #fff;
+    color: #432F48;
+    padding: 30px 50px;
+}
+.course-list ul{
+    list-style: none;
+    margin: 20px 0;
+}
+
+
+/* courses */
+.flex-inline{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+button.sbtn{
+    border: none;
+    outline: none;
+    background: #432F48;
+    color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 1.2em;
+}
